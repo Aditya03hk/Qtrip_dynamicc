@@ -13,8 +13,8 @@ async function init() {
 
   //Updates the DOM with the cities
   if (cities) {
-    cities.forEach((key) => {
-      addCityToDOM(key.id, key.city, key.description, key.image);
+    cities.forEach((item) => {
+      addCityToDOM(item.id, item.city, item.description, item.image);
     });
   }
 }
